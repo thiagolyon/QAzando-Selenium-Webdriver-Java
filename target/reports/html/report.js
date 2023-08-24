@@ -1,77 +1,89 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("desconto.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cadastro.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "# language: pt"
+      "value": "#language: pt"
     }
   ],
   "line": 3,
-  "name": "Receber o cupom desconto da QAzando",
-  "description": "Eu como usuário da QAzando\r\nQuero receber um cupom de desconto\r\nPara comprar um curso com valor reduzido",
-  "id": "receber-o-cupom-desconto-da-qazando",
+  "name": "Cadastro de Usuário",
+  "description": "Eu como um novo usuário\r\nQuero me cadastrar no site\r\nPara que eu possa fazer login posteriormente",
+  "id": "cadastro-de-usuário",
   "keyword": "Funcionalidade"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Visualizar código de desconto",
+  "name": "Cadastro bem-sucedido com informações válidas",
   "description": "",
-  "id": "receber-o-cupom-desconto-da-qazando;visualizar-código-de-desconto",
+  "id": "cadastro-de-usuário;cadastro-bem-sucedido-com-informações-válidas",
   "type": "scenario",
-  "keyword": "Cenario",
+  "keyword": "Cenário",
   "tags": [
     {
       "line": 8,
-      "name": "@visualizar-cupom"
+      "name": "@cadastro-sucesso"
     }
   ]
 });
 formatter.step({
   "line": 10,
-  "name": "que estou no site da QAzando",
+  "name": "que estou na página de cadastro",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 11,
-  "name": "eu preencho meu e-mail",
+  "name": "preencho o formulário de cadastro com informações válidas",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 12,
-  "name": "clico no botão Ganhar cupom",
+  "name": "clico no botão de cadastro",
   "keyword": "E "
 });
 formatter.step({
   "line": 13,
-  "name": "o código de desconto é exibido",
+  "name": "devo receber uma mensagem de confirmação",
   "keyword": "Então "
 });
+formatter.step({
+  "line": 14,
+  "name": "devo ser redirecionado para a página da minha conta",
+  "keyword": "E "
+});
 formatter.match({
-  "location": "DescontosStep.que_estou_no_site_da_QAzando()"
+  "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
 });
 formatter.result({
-  "duration": 7730729000,
+  "duration": 1858996400,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.eu_preencho_meu_e_mail()"
+  "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
 });
 formatter.result({
-  "duration": 85692500,
+  "duration": 289522900,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.clico_no_botão_Ganhar_cupom()"
+  "location": "CadastroSteps.clico_no_botão_de_cadastro()"
 });
 formatter.result({
-  "duration": 3944790300,
+  "duration": 2414317100,
   "status": "passed"
 });
 formatter.match({
-  "location": "DescontosStep.o_código_de_desconto_é_exibido()"
+  "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
 });
 formatter.result({
-  "duration": 13772400,
+  "duration": 2141139100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
+});
+formatter.result({
+  "duration": 28300,
   "status": "passed"
 });
 });
