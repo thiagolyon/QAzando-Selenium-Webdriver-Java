@@ -1,89 +1,77 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cadastro.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#language: pt"
+      "value": "# language: pt"
     }
   ],
   "line": 3,
-  "name": "Cadastro de Usuário",
-  "description": "Eu como um novo usuário\r\nQuero me cadastrar no site\r\nPara que eu possa fazer login posteriormente",
-  "id": "cadastro-de-usuário",
+  "name": "Login do Usuário",
+  "description": "Eu como um novo usuário\r\nQuero realizar o login na minha conta\r\nPara poder concluir minhas compras",
+  "id": "login-do-usuário",
   "keyword": "Funcionalidade"
 });
 formatter.scenario({
   "line": 9,
-  "name": "Cadastro bem-sucedido com informações válidas",
+  "name": "Login bem-sucedido com credenciais válidas",
   "description": "",
-  "id": "cadastro-de-usuário;cadastro-bem-sucedido-com-informações-válidas",
+  "id": "login-do-usuário;login-bem-sucedido-com-credenciais-válidas",
   "type": "scenario",
   "keyword": "Cenário",
   "tags": [
     {
       "line": 8,
-      "name": "@cadastro-sucesso"
+      "name": "@login-sucesso"
     }
   ]
 });
 formatter.step({
   "line": 10,
-  "name": "que estou na página de cadastro",
+  "name": "que estou na página de login",
   "keyword": "Dado "
 });
 formatter.step({
   "line": 11,
-  "name": "preencho o formulário de cadastro com informações válidas",
+  "name": "eu insiro meu nome de usuário e senha válidos",
   "keyword": "Quando "
 });
 formatter.step({
   "line": 12,
-  "name": "clico no botão de cadastro",
+  "name": "clico no botão de login",
   "keyword": "E "
 });
 formatter.step({
   "line": 13,
-  "name": "devo receber uma mensagem de confirmação",
+  "name": "devo ser redirecionado para a página da minha conta",
   "keyword": "Então "
 });
-formatter.step({
-  "line": 14,
-  "name": "devo ser redirecionado para a página da minha conta",
-  "keyword": "E "
-});
 formatter.match({
-  "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
+  "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 1858996400,
+  "duration": 1935672900,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
+  "location": "LoginSteps.eu_insiro_meu_nome_de_usuário_e_senha_válidos()"
 });
 formatter.result({
-  "duration": 289522900,
+  "duration": 5086144500,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.clico_no_botão_de_cadastro()"
+  "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 2414317100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
-});
-formatter.result({
-  "duration": 2141139100,
+  "duration": 17300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
 });
 formatter.result({
-  "duration": 28300,
+  "duration": 9500,
   "status": "passed"
 });
 });

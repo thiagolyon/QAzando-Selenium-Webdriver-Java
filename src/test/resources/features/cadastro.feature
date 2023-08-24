@@ -11,3 +11,7 @@
       Quando preencho o formulário de cadastro com informações válidas
       E clico no botão de cadastro
       Então devo receber uma mensagem de confirmação
+
+
+    Cenário: Atualizar os dados da minha conta
+      Dado que estou logado

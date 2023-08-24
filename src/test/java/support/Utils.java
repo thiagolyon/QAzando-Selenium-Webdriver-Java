@@ -26,4 +26,16 @@ public class Utils extends RunCucumberTest {
 
         return email_inicio + resultado + email_final;
     }
+
+    public String meuEmail(){
+        String email = "thiago.lyon.passos@gmail.com";
+
+        return email;
+    }
+
+    public String minhaSenha() {
+        String senha = "Brasil00";
+
+        return senha;
+    }
 }
