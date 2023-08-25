@@ -10,6 +10,9 @@ public class AtualizaPerfilPage extends Utils {
 
     WebDriver driver;
 
+    private By preencher_nome = (By.id("f_name"));
+    private By preencher_sobrenome = (By.cssSelector("input.form-control[placeholder='Dhoe'][required]"));
+
     public AtualizaPerfilPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -25,5 +28,19 @@ public class AtualizaPerfilPage extends Utils {
 
     public void acessarAccountDetails() {
         driver.findElement(By.cssSelector("#my-account_area > div > div > div.col-sm-12.col-md-12.col-lg-3 > div > ul > li:nth-child(5) > a")).click();
+    }
+
+    public void accessarUpdateAccount() {
+        waitElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']"), 10);
+        driver.findElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']")).click();
+    }
+
+    public void preencherNome() {
+        waitElement(By.id("f_name"),10);
+        driver.findElement(preencher_nome).sendKeys("Thiago Lyon");
+    }
+
+    public void preencherSobrenome() {
+        driver.findElement(preencher_sobrenome).sendKeys("Nascimento");
     }
 }

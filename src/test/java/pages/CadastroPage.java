@@ -34,7 +34,7 @@ public class CadastroPage extends Utils {
     }
 
     public void preencherSenha() {
-        driver.findElement(preencher_senha).sendKeys("Brasil00");
+        driver.findElement(preencher_senha).sendKeys("Teste102030");
         waitElement(preencher_senha, 10);
     }
 

@@ -22,12 +22,13 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
 
     @Quando("^acesso o menu UPDATE ACCOUNT$")
     public void acesso_o_menu_UPDATE_ACCOUNT() {
-
+        atualizaPerfilPage.accessarUpdateAccount();
     }
 
     @Quando("^preencho os dados corretamente$")
     public void preencho_os_dados_corretamente() {
-
+        atualizaPerfilPage.preencherNome();
+        atualizaPerfilPage.preencherSobrenome();
     }
 
     @Quando("^clico no botão UPDATE INFORMATION$")
