@@ -28,6 +28,6 @@ public class LoginSteps extends RunCucumberTest {
 
     @Então("^devo ser redirecionado para a página da minha conta$")
     public void devo_ser_redirecionado_para_a_página_da_minha_conta() {
-
+        loginPage.confirmarAcesso();
     }
 }

@@ -8,10 +8,10 @@ import support.Utils;
 
 public class LoginPage extends Utils {
 
-    WebDriver driver;
-
     private By preencher_email = (By.id("user"));
     private By preencher_senha = (By.id("password"));
+
+    WebDriver driver;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -36,5 +36,13 @@ public class LoginPage extends Utils {
 
     public void clicarBtnLogin() {
         driver.findElement(By.id("btnLogin")).click();
+    }
+
+    public void confirmarAcesso() {
+        waitElement(By.id("swal2-title"), 10);
+        WebElement mensagemElement = driver.findElement(By.id("swal2-title"));
+        String mensagemText = mensagemElement.getText();
+        String mensagemEsperada = "Login realizado";
+        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
     }
 }
