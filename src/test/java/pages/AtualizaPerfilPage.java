@@ -24,7 +24,6 @@ public class AtualizaPerfilPage extends Utils {
     }
 
     public void acessarAccountDetails() {
-    //  waitElement(By.linkText("ACCOUNT  DETAILS"),10);
         driver.findElement(By.cssSelector("#my-account_area > div > div > div.col-sm-12.col-md-12.col-lg-3 > div > ul > li:nth-child(5) > a")).click();
     }
 }
