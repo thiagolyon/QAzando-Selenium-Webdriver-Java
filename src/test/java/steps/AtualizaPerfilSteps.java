@@ -27,7 +27,7 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
 
     @Quando("^preencho os dados corretamente$")
     public void preencho_os_dados_corretamente() {
-        atualizaPerfilPage.preencherNome();
+        atualizaPerfilPage.preencherNome("Thiago Lyon");
         atualizaPerfilPage.preencherSobrenome();
         atualizaPerfilPage.preencherEmail();
         atualizaPerfilPage.preencherSenhaAtual();

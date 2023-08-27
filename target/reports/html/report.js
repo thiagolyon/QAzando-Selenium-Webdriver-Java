@@ -56,28 +56,28 @@ formatter.match({
   "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
 });
 formatter.result({
-  "duration": 2704827800,
+  "duration": 1849789200,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
 });
 formatter.result({
-  "duration": 305906500,
+  "duration": 257200300,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.clico_no_botão_de_cadastro()"
 });
 formatter.result({
-  "duration": 49587100,
+  "duration": 51446000,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
 });
 formatter.result({
-  "duration": 76101600,
+  "duration": 74150100,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,42 +128,42 @@ formatter.match({
   "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
 });
 formatter.result({
-  "duration": 623480300,
+  "duration": 637624900,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
 });
 formatter.result({
-  "duration": 182138800,
+  "duration": 215667900,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
 });
 formatter.result({
-  "duration": 629329100,
+  "duration": 611255500,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
 });
 formatter.result({
-  "duration": 870344200,
+  "duration": 904260800,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
 });
 formatter.result({
-  "duration": 73679800,
+  "duration": 83740400,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
 });
 formatter.result({
-  "duration": 6314648500,
+  "duration": 587261600,
   "status": "passed"
 });
 });

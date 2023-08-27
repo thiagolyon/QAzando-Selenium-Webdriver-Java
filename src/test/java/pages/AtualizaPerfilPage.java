@@ -10,6 +10,7 @@ public class AtualizaPerfilPage extends Utils {
 
     WebDriver driver;
 
+    private By validar_pagina_inicial = (By.cssSelector("a.active"));
     private By preencher_nome = (By.id("f_name"));
     private By preencher_sobrenome = (By.cssSelector("input.form-control[placeholder='Dhoe'][required]"));
     private By preencher_email = (By.id("email_address"));
@@ -23,7 +24,7 @@ public class AtualizaPerfilPage extends Utils {
 
     public void confirmarPaginaPainel() {
         waitElement(By.cssSelector("a.active"), 10);
-        WebElement mensagemElement = driver.findElement(By.cssSelector("a.active"));
+        WebElement mensagemElement = driver.findElement(validar_pagina_inicial);
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "DASHBOARD";
         Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
@@ -31,7 +32,8 @@ public class AtualizaPerfilPage extends Utils {
     }
 
     public void acessarAccountDetails() {
-        driver.findElement(By.cssSelector("#my-account_area > div > div > div.col-sm-12.col-md-12.col-lg-3 > div > ul > li:nth-child(5) > a")).click();
+        waitElement(By.cssSelector("a[href^='/my-account/customer-account-details']"),10);
+        driver.findElement(By.cssSelector("a[href^='/my-account/customer-account-details']")).click();
     }
 
     public void accessarUpdateAccount() {
@@ -39,9 +41,9 @@ public class AtualizaPerfilPage extends Utils {
         driver.findElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']")).click();
     }
 
-    public void preencherNome() {
+    public void preencherNome(String name) {
         waitElement(By.id("f_name"),10);
-        driver.findElement(preencher_nome).sendKeys("Thiago Lyon");
+        driver.findElement(preencher_nome).sendKeys(name);
     }
 
     public void preencherSobrenome() {
@@ -49,7 +51,7 @@ public class AtualizaPerfilPage extends Utils {
     }
 
     public void preencherEmail() {
-        driver.findElement(preencher_email).sendKeys("lyon@teste.com");
+        driver.findElement(preencher_email).sendKeys(gerarEmailAleatorio());
     }
 
     public void preencherSenhaAtual() {

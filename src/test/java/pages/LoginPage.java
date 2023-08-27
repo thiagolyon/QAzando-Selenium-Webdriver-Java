@@ -27,11 +27,13 @@ public class LoginPage extends Utils {
     }
 
     public void preencherEmail() {
-        driver.findElement(preencher_email).sendKeys(meuEmail());
+        driver.findElement(preencher_email).sendKeys(gerarEmailAleatorio());
+        System.out.println(gerarEmailAleatorio());
     }
 
     public void preencherSenha() {
         driver.findElement(preencher_senha).sendKeys(minhaSenha());
+        System.out.println(minhaSenha());
     }
 
     public void clicarBtnLogin() {
