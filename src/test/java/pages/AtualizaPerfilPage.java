@@ -12,6 +12,10 @@ public class AtualizaPerfilPage extends Utils {
 
     private By preencher_nome = (By.id("f_name"));
     private By preencher_sobrenome = (By.cssSelector("input.form-control[placeholder='Dhoe'][required]"));
+    private By preencher_email = (By.id("email_address"));
+    private By preencher_senha_atual = (By.id("current_password"));
+    private By preencher_nova_senha = (By.id("new_password"));
+    private By preencher_senha_novamente = (By.id("re_password"));
 
     public AtualizaPerfilPage(WebDriver driver) {
         this.driver = driver;
@@ -42,5 +46,36 @@ public class AtualizaPerfilPage extends Utils {
 
     public void preencherSobrenome() {
         driver.findElement(preencher_sobrenome).sendKeys("Nascimento");
+    }
+
+    public void preencherEmail() {
+        driver.findElement(preencher_email).sendKeys("lyon@teste.com");
+    }
+
+    public void preencherSenhaAtual() {
+        driver.findElement(preencher_senha_atual).sendKeys("lyon!23");
+    }
+
+    public void preencherNovaSenha() {
+        driver.findElement(preencher_nova_senha).sendKeys("LyonTE#89");
+    }
+
+    public void preencherSenhaNovamente() {
+        driver.findElement(preencher_senha_novamente).sendKeys("LyonTe#89");
+    }
+
+    public void clicarBtnUpadateInformation() {
+        waitElement(By.xpath("//form[@id='account_info_form']//button[@type='submit']"),10);
+        driver.findElement(By.xpath("//form[@id='account_info_form']//button[@type='submit']")).click();
+    }
+
+    public void validarTelaProfile() {
+        waitElement(By.xpath("//div[@class='profile_right']/h4"), 10);
+        WebElement mensagemElement = driver.findElement(By.xpath("//div[@class='profile_right']/h4"));
+        String mensagemText = mensagemElement.getText();
+        String mensagemEsperada = "Fashion Store";
+        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        System.out.println(mensagemText);
+        System.out.println(mensagemEsperada);
     }
 }

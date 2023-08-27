@@ -29,15 +29,19 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
     public void preencho_os_dados_corretamente() {
         atualizaPerfilPage.preencherNome();
         atualizaPerfilPage.preencherSobrenome();
+        atualizaPerfilPage.preencherEmail();
+        atualizaPerfilPage.preencherSenhaAtual();
+        atualizaPerfilPage.preencherNovaSenha();
+        atualizaPerfilPage.preencherSenhaNovamente();
     }
 
     @Quando("^clico no botão UPDATE INFORMATION$")
     public void clico_no_botão_UPDATE_INFORMATION() {
-
+        atualizaPerfilPage.clicarBtnUpadateInformation();
     }
 
     @Entao("^a aplicacao deve ser redirecionada para a tela PROFILE$")
     public void a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE() {
-
+        atualizaPerfilPage.validarTelaProfile();
     }
 }
