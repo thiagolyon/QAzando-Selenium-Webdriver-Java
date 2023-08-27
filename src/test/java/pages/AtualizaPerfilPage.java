@@ -75,7 +75,5 @@ public class AtualizaPerfilPage extends Utils {
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "Fashion Store";
         Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
-        System.out.println(mensagemText);
-        System.out.println(mensagemEsperada);
     }
 }
