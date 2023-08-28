@@ -1,6 +1,9 @@
 package support;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumberTest;
@@ -9,12 +12,12 @@ import java.util.Random;
 
 public class Utils extends RunCucumberTest {
 
-    public void waitElement(By element, int time) {
-        WebDriverWait wait = new WebDriverWait(driver, time);
+    public static void waitElement(By element, int time) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), time);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public String gerarEmailAleatorio() {
+    public static String gerarEmailAleatorio() {
 
         // Gere dois números aleatórios entre 0 e 99
         Random random = new Random();
@@ -27,7 +30,7 @@ public class Utils extends RunCucumberTest {
         return email;
     }
 
-    private String gerarLetrasMinusculasAleatorias(int comprimento) {
+    private static String gerarLetrasMinusculasAleatorias(int comprimento) {
         SecureRandom random = new SecureRandom();
         StringBuilder letras = new StringBuilder();
         for (int i = 0; i < comprimento; i++) {
@@ -36,7 +39,7 @@ public class Utils extends RunCucumberTest {
         return letras.toString();
     }
 
-    private void embaralharArray(char[] array) {
+    private static void embaralharArray(char[] array) {
         SecureRandom random = new SecureRandom();
         for (int i = array.length - 1; i > 0; i--) {
             int indice = random.nextInt(i + 1);
@@ -46,23 +49,41 @@ public class Utils extends RunCucumberTest {
         }
     }
 
-    public String minhaSenha() {
+    public static String minhaSenha() {
         SecureRandom random = new SecureRandom();
 
         // Gerar uma letra maiúscula aleatória
         String letraMaiuscula = String.valueOf((char) (random.nextInt(26) + 'A'));
 
+        // Gerar cinco letras minúsculas aleatórias
+        String letrasMinusculas = gerarLetrasMinusculasAleatorias(5);
+
         // Gerar dois dígitos numéricos aleatórios
         String numeros = String.valueOf(random.nextInt(10)) + random.nextInt(10);
 
-        // Gerar até quatro letras minúsculas aleatórias
-        String letrasMinusculas = gerarLetrasMinusculasAleatorias(random.nextInt(5));
-
         // Combinar os componentes para formar a senha
-        String senha = letraMaiuscula + numeros + letrasMinusculas;
+        String senha = letraMaiuscula + letrasMinusculas + numeros;
         char[] arraySenha = senha.toCharArray();
         embaralharArray(arraySenha);
 
         return new String(arraySenha);
+    }
+
+    public static void scrollToElement(WebDriver driver, WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public static void scrollAteOFinalDaPagina() throws InterruptedException {
+        JavascriptExecutor jse = (JavascriptExecutor) getDriver();
+        jse.executeScript("window.scrollTo(0, 10000)");
+        Thread.sleep(500);
+    }
+
+    public static void sleep(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

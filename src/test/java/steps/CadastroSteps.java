@@ -8,7 +8,7 @@ import runner.RunCucumberTest;
 
 public class CadastroSteps extends RunCucumberTest {
 
-    CadastroPage cadastroPage = new CadastroPage(driver);
+    CadastroPage cadastroPage = new CadastroPage();
 
     @Dado("^que estou na página de cadastro$")
     public void que_estou_na_página_de_cadastro() {

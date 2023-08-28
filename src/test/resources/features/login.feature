@@ -1,5 +1,6 @@
 # language: pt
 
+  @login-duplo
   Funcionalidade: Login do Usuário
     Eu como um novo usuário
     Quero realizar o login na minha conta
@@ -7,6 +8,13 @@
 
     @login-sucesso
     Cenário: Login bem-sucedido com credenciais válidas
+      Dado que estou na página de login
+      Quando eu insiro meu nome de usuário e senha válidos
+      E clico no botão de login
+      Então devo ser redirecionado para a página da minha conta
+
+    @login-sucesso2
+    Cenário: Login bem-sucedido com credenciais válidas2
       Dado que estou na página de login
       Quando eu insiro meu nome de usuário e senha válidos
       E clico no botão de login

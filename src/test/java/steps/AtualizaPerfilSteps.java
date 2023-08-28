@@ -3,12 +3,14 @@ package steps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.JavascriptExecutor;
 import pages.AtualizaPerfilPage;
 import runner.RunCucumberTest;
+import support.Utils;
 
 public class AtualizaPerfilSteps extends RunCucumberTest {
 
-    AtualizaPerfilPage atualizaPerfilPage = new AtualizaPerfilPage(driver);
+    AtualizaPerfilPage atualizaPerfilPage = new AtualizaPerfilPage();
 
     @Dado("^que estou na pagina do painel$")
     public void que_estou_na_pagina_do_painel() {
@@ -36,7 +38,7 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
     }
 
     @Quando("^clico no botão UPDATE INFORMATION$")
-    public void clico_no_botão_UPDATE_INFORMATION() {
+    public void clico_no_botão_UPDATE_INFORMATION() throws InterruptedException {
         atualizaPerfilPage.clicarBtnUpadateInformation();
     }
 
