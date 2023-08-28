@@ -3,199 +3,25 @@
     "comments": [
       {
         "line": 1,
-        "value": "#language: pt"
-      }
-    ],
-    "line": 4,
-    "elements": [
-      {
-        "line": 10,
-        "name": "Cadastro bem-sucedido com informações válidas",
-        "description": "",
-        "id": "cadastro-de-usuário;cadastro-bem-sucedido-com-informações-válidas",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 3594373501,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "que estou na página de cadastro",
-            "match": {
-              "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 187559699,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "preencho o formulário de cadastro com informações válidas",
-            "match": {
-              "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 44160900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clico no botão de cadastro",
-            "match": {
-              "location": "CadastroSteps.clico_no_botão_de_cadastro()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 18238100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "devo receber uma mensagem de confirmação",
-            "match": {
-              "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
-            },
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "line": 9,
-            "name": "@cadastro-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 17,
-        "name": "Atualizar os dados da minha conta",
-        "description": "",
-        "id": "cadastro-de-usuário;atualizar-os-dados-da-minha-conta",
-        "type": "scenario",
-        "keyword": "Cenário",
-        "steps": [
-          {
-            "result": {
-              "duration": 3262300000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "que estou na pagina do painel",
-            "match": {
-              "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 40195899,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "acesso o menu ACCOUNT DETAILS",
-            "match": {
-              "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 50064600,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "acesso o menu UPDATE ACCOUNT",
-            "match": {
-              "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 586706199,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "preencho os dados corretamente",
-            "match": {
-              "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 591401300,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "clico no botão UPDATE INFORMATION",
-            "match": {
-              "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 274260800,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "a aplicacao deve ser redirecionada para a tela PROFILE",
-            "match": {
-              "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@atualiza-perfil"
-          }
-        ]
-      }
-    ],
-    "name": "Cadastro de Usuário",
-    "description": "Eu como um novo usuário\r\nQuero me cadastrar no site\r\nPara que eu possa fazer login posteriormente",
-    "id": "cadastro-de-usuário",
-    "keyword": "Funcionalidade",
-    "uri": "cadastro.feature",
-    "tags": [
-      {
-        "line": 3,
-        "name": "@cadastro-completo"
-      }
-    ]
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
         "value": "# language: pt"
       }
     ],
     "line": 4,
     "elements": [
       {
-        "line": 10,
-        "name": "Login bem-sucedido com credenciais válidas",
+        "line": 24,
+        "name": "Tentativa de login mal sucedida com senha invalida",
         "description": "",
-        "id": "login-do-usuário;login-bem-sucedido-com-credenciais-válidas",
+        "id": "login-do-usuário;tentativa-de-login-mal-sucedida-com-senha-invalida",
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 2517584500,
+              "duration": 3384166100,
               "status": "passed"
             },
-            "line": 11,
+            "line": 25,
             "name": "que estou na página de login",
             "match": {
               "location": "LoginSteps.que_estou_na_página_de_login()"
@@ -204,22 +30,22 @@
           },
           {
             "result": {
-              "duration": 148260800,
+              "duration": 132533500,
               "status": "passed"
             },
-            "line": 12,
-            "name": "eu insiro meu nome de usuário e senha válidos",
+            "line": 26,
+            "name": "insiro meu e-mail válido com uma senha inválida",
             "match": {
-              "location": "LoginSteps.eu_insiro_meu_nome_de_usuário_e_senha_válidos()"
+              "location": "LoginSteps.insiro_meu_e_mail_válido_com_uma_senha_inválida()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 50697100,
+              "duration": 41386500,
               "status": "passed"
             },
-            "line": 13,
+            "line": 27,
             "name": "clico no botão de login",
             "match": {
               "location": "LoginSteps.clico_no_botão_de_login()"
@@ -228,21 +54,21 @@
           },
           {
             "result": {
-              "duration": 28642900,
+              "duration": 23239401,
               "status": "passed"
             },
-            "line": 14,
-            "name": "devo ser redirecionado para a página da minha conta",
+            "line": 28,
+            "name": "a aplicação deve exibir a mensagem de erro Senha inválida",
             "match": {
-              "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
+              "location": "LoginSteps.a_aplicação_deve_exibir_a_mensagem_de_erro_Senha_inválida()"
             },
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "line": 9,
-            "name": "@login-sucesso"
+            "line": 23,
+            "name": "@login-senha-invalida"
           }
         ]
       }

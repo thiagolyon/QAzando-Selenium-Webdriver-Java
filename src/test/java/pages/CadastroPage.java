@@ -26,7 +26,9 @@ public class CadastroPage extends RunCucumberTest {
     }
 
     public void preencherSenha() {
-        getDriver().findElement(preencher_senha).sendKeys("Teste102030");
+        String senha = Utils.minhaSenha();
+        getDriver().findElement(preencher_senha).sendKeys(Utils.minhaSenha());
+        System.out.println(senha);
     }
 
     public void clicarBtnCadastar() {

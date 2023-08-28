@@ -38,4 +38,26 @@ public class LoginPage extends RunCucumberTest {
         String mensagemEsperada = "Login realizado";
         Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
     }
+
+    public void emailInvalido() {
+        getDriver().findElement(preencher_email).sendKeys("qualquercoisa");
+    }
+
+    public void validarMensagemErroEmail() {
+        WebElement mensagemElement = getDriver().findElement(By.className("invalid_input"));
+        String mensagem = mensagemElement.getText();
+
+        Assert.assertEquals("A mensagem esperada não corresponde com a mensagem atual.","E-mail inválido.", mensagem);
+    }
+
+    public void senhaInvalida() {
+        getDriver().findElement(preencher_senha).sendKeys("123");
+    }
+
+    public void validarMensagemErroSenha() {
+        WebElement mensagemElement = getDriver().findElement(By.className("invalid_input"));
+        String mensagem = mensagemElement.getText();
+        System.out.println(mensagem);
+        Assert.assertEquals("A mensagem esperada não corresponde com a mensagem atual.","Senha inválida.", mensagem);
+    }
 }
