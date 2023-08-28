@@ -17,6 +17,6 @@ public class RunCucumberTest extends RunBase {
 
     @AfterClass
     public static void stop() {
-        driver.quit();
+        getDriver().quit();
     }
 }

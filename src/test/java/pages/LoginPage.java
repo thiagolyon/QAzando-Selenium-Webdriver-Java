@@ -10,10 +10,10 @@ public class LoginPage extends RunCucumberTest {
 
     private By preencher_email = (By.id("user"));
     private By preencher_senha = (By.id("password"));
+    private String URL = "https://automationpratice.com.br/login";
 
     public void acessarLogin() {
-        getDriver().get("https://automationpratice.com.br/login");
-        Utils.waitElement(By.id("btnLogin"), 10);
+        getDriver(System.getProperty("browser")).get(URL);
         WebElement mensagemElement = getDriver().findElement(By.id("btnLogin"));
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "LOGIN";
@@ -33,7 +33,6 @@ public class LoginPage extends RunCucumberTest {
     }
 
     public void confirmarAcesso() {
-        Utils.waitElement(By.id("swal2-title"), 10);
         WebElement mensagemElement = getDriver().findElement(By.id("swal2-title"));
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "Login realizado";

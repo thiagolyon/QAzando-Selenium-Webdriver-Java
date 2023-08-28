@@ -13,7 +13,6 @@ public class LoginSteps extends RunCucumberTest {
 
     @Dado("^que estou na página de login$")
     public void que_estou_na_página_de_login() {
-        getDriver(RunBase.Browser.CHROME);
         loginPage.acessarLogin();
     }
 

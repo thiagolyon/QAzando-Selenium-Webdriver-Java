@@ -13,7 +13,6 @@ public class CadastroSteps extends RunCucumberTest {
 
     @Dado("^que estou na página de cadastro$")
     public void que_estou_na_página_de_cadastro() {
-        getDriver(RunBase.Browser.CHROME);
         cadastroPage.acessarCadastro();
     }
 

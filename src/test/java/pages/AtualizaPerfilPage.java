@@ -15,11 +15,10 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     private By preencher_senha_atual = (By.id("current_password"));
     private By preencher_nova_senha = (By.id("new_password"));
     private By preencher_senha_novamente = (By.id("re_password"));
+    private String URL = "https://automationpratice.com.br/my-account/customer-account-details";
 
     public void confirmarPaginaPainel() {
-
-        getDriver().get("https://automationpratice.com.br/my-account/customer-account-details");
-        Utils.waitElement(By.cssSelector("a.active"), 10);
+        getDriver(System.getProperty("browser")).get(URL);
         WebElement mensagemElement = getDriver().findElement(validar_pagina_inicial);
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "ACCOUNT DETAILS";
@@ -28,17 +27,14 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     }
 
     public void acessarAccountDetails() {
-        Utils.waitElement(By.cssSelector("a[href^='/my-account/customer-account-details']"),10);
         getDriver().findElement(By.cssSelector("a[href^='/my-account/customer-account-details']")).click();
     }
 
     public void accessarUpdateAccount() {
-        Utils.waitElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']"), 10);
         getDriver().findElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']")).click();
     }
 
     public void preencherNome(String name) {
-        Utils.waitElement(By.id("f_name"),10);
         getDriver().findElement(preencher_nome).sendKeys(name);
     }
 
@@ -64,12 +60,10 @@ public class AtualizaPerfilPage extends RunCucumberTest {
 
     public void clicarBtnUpadateInformation() throws InterruptedException {
         Utils.scrollAteOFinalDaPagina();
-        Utils.waitElement(By.xpath("//form[@id='account_info_form']//button[@type='submit']"),10);
         getDriver().findElement(By.xpath("//form[@id='account_info_form']//button[@type='submit']")).click();
     }
 
     public void validarTelaProfile() {
-        Utils.waitElement(By.xpath("//div[@class='profile_right']/h4"), 10);
         WebElement mensagemElement = getDriver().findElement(By.xpath("//div[@class='profile_right']/h4"));
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "Fashion Store";
