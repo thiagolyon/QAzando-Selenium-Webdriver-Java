@@ -4,6 +4,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import pages.AtualizaPerfilPage;
+import runner.RunBase;
 import runner.RunCucumberTest;
 
 
@@ -13,6 +14,7 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
 
     @Dado("^que estou na pagina do painel$")
     public void que_estou_na_pagina_do_painel() {
+        getDriver(RunBase.Browser.CHROME);
         atualizaPerfilPage.confirmarPaginaPainel();
     }
 

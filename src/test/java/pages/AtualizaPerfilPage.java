@@ -18,12 +18,14 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     private By preencher_senha_novamente = (By.id("re_password"));
 
     public void confirmarPaginaPainel() {
+
+        getDriver().get("https://automationpratice.com.br/my-account/customer-account-details");
         Utils.waitElement(By.cssSelector("a.active"), 10);
         WebElement mensagemElement = getDriver().findElement(validar_pagina_inicial);
         String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "DASHBOARD";
+        String mensagemEsperada = "ACCOUNT DETAILS";
         Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
-        getDriver().findElement(By.cssSelector("button.swal2-confirm.swal2-styled")).click();
+        getDriver().findElement(By.cssSelector("a.active")).click();
     }
 
     public void acessarAccountDetails() {

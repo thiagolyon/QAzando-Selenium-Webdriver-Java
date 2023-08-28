@@ -4,6 +4,7 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.CadastroPage;
+import runner.RunBase;
 import runner.RunCucumberTest;
 
 public class CadastroSteps extends RunCucumberTest {
@@ -12,6 +13,7 @@ public class CadastroSteps extends RunCucumberTest {
 
     @Dado("^que estou na página de cadastro$")
     public void que_estou_na_página_de_cadastro() {
+        getDriver(RunBase.Browser.CHROME);
         cadastroPage.acessarCadastro();
     }
 
