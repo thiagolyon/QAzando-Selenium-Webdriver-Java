@@ -22,12 +22,10 @@ public class LoginPage extends RunCucumberTest {
 
     public void preencherEmail() {
         getDriver().findElement(preencher_email).sendKeys(Utils.gerarEmailAleatorio());
-        System.out.println(Utils.gerarEmailAleatorio());
     }
 
     public void preencherSenha() {
         getDriver().findElement(preencher_senha).sendKeys(Utils.minhaSenha());
-        System.out.println(Utils.minhaSenha());
     }
 
     public void clicarBtnLogin() {
