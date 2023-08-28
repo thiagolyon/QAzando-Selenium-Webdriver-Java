@@ -3,10 +3,9 @@ package steps;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
-import org.openqa.selenium.JavascriptExecutor;
 import pages.AtualizaPerfilPage;
 import runner.RunCucumberTest;
-import support.Utils;
+
 
 public class AtualizaPerfilSteps extends RunCucumberTest {
 
