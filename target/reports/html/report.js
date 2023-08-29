@@ -56,28 +56,28 @@ formatter.match({
   "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
 });
 formatter.result({
-  "duration": 3488582300,
+  "duration": 3695110600,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
 });
 formatter.result({
-  "duration": 301617300,
+  "duration": 293749700,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.clico_no_botão_de_cadastro()"
 });
 formatter.result({
-  "duration": 80554100,
+  "duration": 81623700,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
 });
 formatter.result({
-  "duration": 18519200,
+  "duration": 62830100,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,42 +128,42 @@ formatter.match({
   "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
 });
 formatter.result({
-  "duration": 4699931000,
+  "duration": 3813848800,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
 });
 formatter.result({
-  "duration": 67721900,
+  "duration": 67492200,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
 });
 formatter.result({
-  "duration": 83104000,
+  "duration": 82727800,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
 });
 formatter.result({
-  "duration": 762702700,
+  "duration": 779770600,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
 });
 formatter.result({
-  "duration": 1102439800,
+  "duration": 1098940400,
   "status": "passed"
 });
 formatter.match({
   "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
 });
 formatter.result({
-  "duration": 289311900,
+  "duration": 314283600,
   "status": "passed"
 });
 formatter.uri("login.feature");
@@ -202,7 +202,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 3607881300,
+  "duration": 3558850900,
   "status": "passed"
 });
 formatter.scenario({
@@ -248,21 +248,21 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 195529600,
+  "duration": 185372000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 82460900,
+  "duration": 80860900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
 });
 formatter.result({
-  "duration": 15382200,
+  "duration": 55829700,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -346,7 +346,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 3234864200,
+  "duration": 2556204300,
   "status": "passed"
 });
 formatter.scenario({
@@ -403,14 +403,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 193182900,
+  "duration": 196606200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 71034400,
+  "duration": 71436600,
   "status": "passed"
 });
 formatter.match({
@@ -423,7 +423,7 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 21712100,
+  "duration": 49912600,
   "status": "passed"
 });
 formatter.background({
@@ -442,7 +442,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 2485409800,
+  "duration": 4239185000,
   "status": "passed"
 });
 formatter.scenario({
@@ -499,14 +499,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 194944300,
+  "duration": 182432400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 73942200,
+  "duration": 74084900,
   "status": "passed"
 });
 formatter.match({
@@ -519,7 +519,7 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 20238600,
+  "duration": 51562000,
   "status": "passed"
 });
 });

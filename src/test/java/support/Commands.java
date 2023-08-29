@@ -1,5 +1,6 @@
 package support;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,7 +20,6 @@ public class Commands extends RunCucumberTest {
 
 
     public static void clickElement(By element) {
-        System.out.println("####################");
         try {
             System.out.println("Vai clicar no elemento: " + element);
             waitElementBeClickable(element, 5000);
@@ -33,7 +33,6 @@ public class Commands extends RunCucumberTest {
     }
 
     public static void fillField(By element, String value) {
-        System.out.println("####################");
         try {
             System.out.println("Vai preencher o campo: " + element);
             waitElementBeVisible(element, 5000);
@@ -43,6 +42,15 @@ public class Commands extends RunCucumberTest {
             System.out.println("********** Aconteceu um erro ao tentar preencher o campo: " + element);
             System.out.println(error);
         }
+        System.out.println("####################");
+    }
+
+    public static void checkMessage(By element, String expectedMessage) {
+        String actualMessage = "";
+
+        waitElementBeVisible(element, 5000);
+        actualMessage = getDriver().findElement(element).getText();
+        Assert.assertEquals("Mensagem esperada não corresponde com a mensagem atual.", expectedMessage, actualMessage);
         System.out.println("####################");
     }
 }

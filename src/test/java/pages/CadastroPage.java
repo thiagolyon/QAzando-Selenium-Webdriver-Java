@@ -1,13 +1,9 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
-import support.Utils;
 
-import static support.Commands.clickElement;
-import static support.Commands.fillField;
+import static support.Commands.*;
 
 public class CadastroPage extends RunCucumberTest {
 
@@ -38,10 +34,6 @@ public class CadastroPage extends RunCucumberTest {
     }
 
     public void mensagemConfirmacao() {
-        WebElement mensagemElement = getDriver().findElement(By.id("swal2-title"));
-        String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "Cadastro realizado!";
-        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        checkMessage(By.id("swal2-title"), "Cadastro realizado!" );
     }
-
 }

@@ -1,12 +1,9 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
 
-import static support.Commands.clickElement;
-import static support.Commands.fillField;
+import static support.Commands.*;
 
 public class LoginPage extends RunCucumberTest {
 
@@ -17,10 +14,7 @@ public class LoginPage extends RunCucumberTest {
 
     public void acessarLogin() {
         getDriver(System.getProperty("browser")).get(URL);
-        WebElement mensagemElement = getDriver().findElement(By.id("btnLogin"));
-        String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "LOGIN";
-        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        checkMessage(By.id("btnLogin"), "LOGIN");
     }
 
     public void preencherEmail(String email) {
@@ -36,14 +30,10 @@ public class LoginPage extends RunCucumberTest {
     }
 
     public void confirmarAcesso() {
-        WebElement mensagemElement = getDriver().findElement(By.id("swal2-title"));
-        String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "Login realizado";
-        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        checkMessage(By.id("swal2-title"), "Login realizado");
     }
 
-    public void mensagemErro(String mensagem) {
-        String mensagemText = getDriver().findElement(By.className("invalid_input")).getText();
-        Assert.assertEquals("As mensagens não correspondem", mensagemText, mensagem);
+    public void mensagemErro(String message) {
+        checkMessage(By.className("invalid_input"), message);
     }
 }

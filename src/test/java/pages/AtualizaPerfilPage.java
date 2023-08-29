@@ -1,13 +1,10 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
 import support.Utils;
 
-import static support.Commands.clickElement;
-import static support.Commands.fillField;
+import static support.Commands.*;
 
 public class AtualizaPerfilPage extends RunCucumberTest {
 
@@ -26,10 +23,7 @@ public class AtualizaPerfilPage extends RunCucumberTest {
 
     public void confirmarPaginaPainel() {
         getDriver(System.getProperty("browser")).get(URL);
-        WebElement mensagemElement = getDriver().findElement(validar_pagina_inicial);
-        String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "ACCOUNT DETAILS";
-        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        checkMessage(validar_pagina_inicial, "ACCOUNT DETAILS");
         clickElement(botao_confirmar);
     }
 
@@ -71,9 +65,6 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     }
 
     public void validarTelaProfile() {
-        WebElement mensagemElement = getDriver().findElement(By.xpath("//div[@class='profile_right']/h4"));
-        String mensagemText = mensagemElement.getText();
-        String mensagemEsperada = "Fashion Store";
-        Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
+        checkMessage(By.xpath("//div[@class='profile_right']/h4"), "Fashion Store");
     }
 }
