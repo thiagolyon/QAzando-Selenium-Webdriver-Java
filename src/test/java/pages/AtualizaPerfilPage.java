@@ -7,6 +7,7 @@ import runner.RunCucumberTest;
 import support.Utils;
 
 import static support.Commands.clickElement;
+import static support.Commands.fillField;
 
 public class AtualizaPerfilPage extends RunCucumberTest {
 
@@ -41,27 +42,27 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     }
 
     public void preencherNome(String name) {
-        getDriver().findElement(preencher_nome).sendKeys(name);
+        fillField(preencher_nome, name);
     }
 
     public void preencherSobrenome() {
-        getDriver().findElement(preencher_sobrenome).sendKeys("Nascimento");
+        fillField(preencher_sobrenome, "Nascimento");
     }
 
     public void preencherEmail() {
-        getDriver().findElement(preencher_email).sendKeys(Utils.gerarEmailAleatorio());
+        fillField(preencher_email, Utils.gerarEmailAleatorio());
     }
 
     public void preencherSenhaAtual() {
-        getDriver().findElement(preencher_senha_atual).sendKeys("lyon!23");
+        fillField(preencher_senha_atual, "lyon!23");
     }
 
     public void preencherNovaSenha() {
-        getDriver().findElement(preencher_nova_senha).sendKeys("LyonTE#89");
+        fillField(preencher_nova_senha, "LyonTE#89");
     }
 
     public void preencherSenhaNovamente() {
-        getDriver().findElement(preencher_senha_novamente).sendKeys("LyonTe#89");
+        fillField(preencher_senha_novamente, "LyonTe#89");
     }
 
     public void clicarBtnUpadateInformation() throws InterruptedException {

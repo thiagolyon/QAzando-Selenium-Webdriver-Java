@@ -7,9 +7,14 @@ import runner.RunCucumberTest;
 
 public class Commands extends RunCucumberTest {
 
-    public static void waitElement(By element, Integer time) {
+    public static void waitElementBeClickable(By element, Integer time) {
         WebDriverWait wait = new WebDriverWait(getDriver(), time);
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public static void waitElementBeVisible(By element, Integer time) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), time);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
 
@@ -17,12 +22,26 @@ public class Commands extends RunCucumberTest {
         System.out.println("####################");
         try {
             System.out.println("Vai clicar no elemento: " + element);
-            waitElement(element, 5000);
+            waitElementBeClickable(element, 5000);
             getDriver().findElement(element).click();
             System.out.println("Clicou no elemento: " + element);
         } catch (Exception error) {
             System.out.println("********** Aconteceu um erro ao tentar clicar no elemento: " + element);
-            new Exception(error);
+            System.out.println(error);
+        }
+        System.out.println("####################");
+    }
+
+    public static void fillField(By element, String value) {
+        System.out.println("####################");
+        try {
+            System.out.println("Vai preencher o campo: " + element);
+            waitElementBeVisible(element, 5000);
+            getDriver().findElement(element).sendKeys(value);
+            System.out.println("Preencheu o campo: " + element);
+        } catch (Exception error) {
+            System.out.println("********** Aconteceu um erro ao tentar preencher o campo: " + element);
+            System.out.println(error);
         }
         System.out.println("####################");
     }

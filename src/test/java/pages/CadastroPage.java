@@ -7,6 +7,7 @@ import runner.RunCucumberTest;
 import support.Utils;
 
 import static support.Commands.clickElement;
+import static support.Commands.fillField;
 
 public class CadastroPage extends RunCucumberTest {
 
@@ -21,15 +22,15 @@ public class CadastroPage extends RunCucumberTest {
     }
 
     public void preencherNome() {
-        getDriver().findElement(preencher_nome).sendKeys("Thiago Lyon");
+        fillField(preencher_nome, "Thiago Lyon");
     }
 
     public void preencherEmail(String email) {
-        getDriver().findElement(preencher_email).sendKeys(email);
+        fillField(preencher_email, email);
     }
 
     public void preencherSenha(String senha) {
-        getDriver().findElement(preencher_senha).sendKeys(senha);
+        fillField(preencher_senha, senha);
     }
 
     public void clicarBtnCadastar() {

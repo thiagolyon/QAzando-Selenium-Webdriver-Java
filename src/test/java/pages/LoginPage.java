@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
 
 import static support.Commands.clickElement;
+import static support.Commands.fillField;
 
 public class LoginPage extends RunCucumberTest {
 
@@ -23,11 +24,11 @@ public class LoginPage extends RunCucumberTest {
     }
 
     public void preencherEmail(String email) {
-        getDriver().findElement(preencher_email).sendKeys(email);
+        fillField(preencher_email, email);
     }
 
     public void preencherSenha(String senha) {
-        getDriver().findElement(preencher_senha).sendKeys(senha);
+        fillField(preencher_senha, senha);
     }
 
     public void clicarBtnLogin() {
