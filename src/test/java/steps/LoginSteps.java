@@ -15,10 +15,10 @@ public class LoginSteps extends RunCucumberTest {
         loginPage.acessarLogin();
     }
 
-    @Quando("^eu insiro meu nome de usuário e senha válidos$")
-    public void eu_insiro_meu_nome_de_usuário_e_senha_válidos() {
-        loginPage.preencherEmail();
-        loginPage.preencherSenha();
+    @Quando("^preencho o login \"([^\"]*)\" e a senha \"([^\"]*)\"$")
+    public void preencho_o_login_e_a_senha(String email, String senha)  {
+        loginPage.preencherEmail(email);
+        loginPage.preencherSenha(senha);
     }
 
     @Quando("^clico no botão de login$")
@@ -31,25 +31,8 @@ public class LoginSteps extends RunCucumberTest {
         loginPage.confirmarAcesso();
     }
 
-    @Quando("^insiro minha senha válida sem um e-mail válido$")
-    public void insiro_minha_senha_válida_sem_um_e_mail_válido()  {
-        loginPage.emailInvalido();
-        loginPage.preencherSenha();
-    }
-
-    @Então("^a aplicação deve exibir a mensagem de erro E-mail inválido$")
-    public void a_aplicação_deve_exibir_a_mensagem_de_erro() {
-        loginPage.validarMensagemErroEmail();
-    }
-
-    @Quando("^insiro meu e-mail válido com uma senha inválida$")
-    public void insiro_meu_e_mail_válido_com_uma_senha_inválida() {
-        loginPage.preencherEmail();
-        loginPage.senhaInvalida();
-    }
-
-    @Então("^a aplicação deve exibir a mensagem de erro Senha inválida$")
-    public void a_aplicação_deve_exibir_a_mensagem_de_erro_Senha_inválida() {
-        loginPage.validarMensagemErroSenha();
+    @Então("^a aplicacao deve exibir a mensagem \"([^\"]*)\" na tela$")
+    public void a_aplicacao_deve_exibir_a_mensagem_na_tela(String mensagem) {
+        loginPage.mensagemErro(mensagem);
     }
 }

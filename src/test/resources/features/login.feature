@@ -1,6 +1,6 @@
 # language: pt
 
-  @login-duplo
+  @login
   Funcionalidade: Login do Usuário
     Eu como um novo usuário
     Quero realizar o login na minha conta
@@ -9,20 +9,20 @@
     @login-sucesso
     Cenário: Login bem-sucedido com credenciais válidas
       Dado que estou na página de login
-      Quando eu insiro meu nome de usuário e senha válidos
+      Quando preencho o login "thiago@teste.com" e a senha "Lyon365"
       E clico no botão de login
       Então devo ser redirecionado para a página da minha conta
 
     @login-email-invalido
-    Cenário: Tentativa de login mal sucedida com e-mail inválido
+    Cenário: Login mal-sucedido com email inválido
       Dado que estou na página de login
-      Quando insiro minha senha válida sem um e-mail válido
+      Quando preencho o login "thiago.com" e a senha "Lyon365"
       E clico no botão de login
-      Então a aplicação deve exibir a mensagem de erro E-mail inválido
+      Então a aplicacao deve exibir a mensagem "E-mail inválido." na tela
 
     @login-senha-invalida
-    Cenário: Tentativa de login mal sucedida com senha invalida
+    Cenário: Login mal-sucedido com senha inválida
       Dado que estou na página de login
-      Quando insiro meu e-mail válido com uma senha inválida
+      Quando preencho o login "thiago@teste.com" e a senha "365"
       E clico no botão de login
-      Então a aplicação deve exibir a mensagem de erro Senha inválida
+      Então a aplicacao deve exibir a mensagem "Senha inválida." na tela
