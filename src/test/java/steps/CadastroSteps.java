@@ -4,10 +4,9 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.CadastroPage;
-import runner.RunBase;
-import runner.RunCucumberTest;
+import support.Utils;
 
-public class CadastroSteps extends RunCucumberTest {
+public class CadastroSteps extends Utils {
 
     CadastroPage cadastroPage = new CadastroPage();
 
@@ -19,8 +18,8 @@ public class CadastroSteps extends RunCucumberTest {
     @Quando("^preencho o formulário de cadastro com informações válidas$")
     public void preencho_o_formulário_de_cadastro_com_informações_válidas() {
         cadastroPage.preencherNome();
-        cadastroPage.preencherEmail();
-        cadastroPage.preencherSenha();
+        cadastroPage.preencherEmail(gerarEmailAleatorio());
+        cadastroPage.preencherSenha(minhaSenha());
     }
 
     @Quando("^clico no botão de cadastro$")

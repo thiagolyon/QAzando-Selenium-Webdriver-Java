@@ -4,12 +4,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
-import support.Utils;
+
+import static support.Commands.clickElement;
 
 public class LoginPage extends RunCucumberTest {
 
     private By preencher_email = (By.id("user"));
     private By preencher_senha = (By.id("password"));
+    private By botao_login = (By.id("btnLogin"));
     private String URL = "https://automationpratice.com.br/login";
 
     public void acessarLogin() {
@@ -29,7 +31,7 @@ public class LoginPage extends RunCucumberTest {
     }
 
     public void clicarBtnLogin() {
-        getDriver().findElement(By.id("btnLogin")).click();
+        clickElement(botao_login);
     }
 
     public void confirmarAcesso() {
@@ -42,6 +44,5 @@ public class LoginPage extends RunCucumberTest {
     public void mensagemErro(String mensagem) {
         String mensagemText = getDriver().findElement(By.className("invalid_input")).getText();
         Assert.assertEquals("As mensagens não correspondem", mensagemText, mensagem);
-        System.out.println(mensagemText + " " + mensagem);
     }
 }

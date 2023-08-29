@@ -1,21 +1,13 @@
 package support;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumberTest;
 import java.security.SecureRandom;
 import java.util.Random;
 
 public class Utils extends RunCucumberTest {
-
-    public static void waitElement(By element, int time) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), time);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
 
     public static String gerarEmailAleatorio() {
 
@@ -76,7 +68,7 @@ public class Utils extends RunCucumberTest {
     public static void scrollAteOFinalDaPagina() throws InterruptedException {
         JavascriptExecutor jse = (JavascriptExecutor) getDriver();
         jse.executeScript("window.scrollTo(0, 10000)");
-        Thread.sleep(500);
+        Thread.sleep(1000);
     }
 
     public static void sleep(int milliseconds) {

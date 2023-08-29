@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
 import support.Utils;
 
+import static support.Commands.clickElement;
+
 public class AtualizaPerfilPage extends RunCucumberTest {
 
     private By validar_pagina_inicial = (By.cssSelector("a.active"));
@@ -15,6 +17,10 @@ public class AtualizaPerfilPage extends RunCucumberTest {
     private By preencher_senha_atual = (By.id("current_password"));
     private By preencher_nova_senha = (By.id("new_password"));
     private By preencher_senha_novamente = (By.id("re_password"));
+    private By botao_confirmar = (By.cssSelector("a.active"));
+    private By botao_account_details = (By.cssSelector("a[href^='/my-account/customer-account-details']"));
+    private By botao_update_account = (By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']"));
+    private By botao_update_information = (By.xpath("//form[@id='account_info_form']//button[@type='submit']"));
     private String URL = "https://automationpratice.com.br/my-account/customer-account-details";
 
     public void confirmarPaginaPainel() {
@@ -23,15 +29,15 @@ public class AtualizaPerfilPage extends RunCucumberTest {
         String mensagemText = mensagemElement.getText();
         String mensagemEsperada = "ACCOUNT DETAILS";
         Assert.assertEquals("Mensagem de confirmação não corresponde ao esperado", mensagemText, mensagemEsperada);
-        getDriver().findElement(By.cssSelector("a.active")).click();
+        clickElement(botao_confirmar);
     }
 
     public void acessarAccountDetails() {
-        getDriver().findElement(By.cssSelector("a[href^='/my-account/customer-account-details']")).click();
+        clickElement(botao_account_details);
     }
 
     public void accessarUpdateAccount() {
-        getDriver().findElement(By.cssSelector("a.theme-btn-one.bg-black.btn_sm[href='/account-edit']")).click();
+        clickElement(botao_update_account);
     }
 
     public void preencherNome(String name) {
@@ -60,7 +66,7 @@ public class AtualizaPerfilPage extends RunCucumberTest {
 
     public void clicarBtnUpadateInformation() throws InterruptedException {
         Utils.scrollAteOFinalDaPagina();
-        getDriver().findElement(By.xpath("//form[@id='account_info_form']//button[@type='submit']")).click();
+        clickElement(botao_update_information);
     }
 
     public void validarTelaProfile() {

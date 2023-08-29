@@ -16,13 +16,13 @@
     -->
 <html lang="en">
  <head>
-  <base href="./../..">  
+  <base href="../..">  
   <meta charset="utf-8"> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Summary"> 
+  <meta name="description" content="Cluecumber Report Plugin [1.2.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.2.0]"> 
-  <title>Scenario Summary - 2023/08/29 13:10:02</title> 
+  <title>Scenario Details - 2023/08/29 13:10:02</title> 
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/datatables.min.css"> 
@@ -31,7 +31,7 @@
  </head> 
  <body> 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
-   <span class="navbar-brand">Scenario Summary</span> 
+   <span class="navbar-brand">Scenario Details</span> 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
     <ul class="navbar-nav mr-auto"> 
@@ -45,8 +45,13 @@
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenarios Tagged With '@login-sucesso'</h3> 
+     <h3>Scenario 'Validar: mensagem de senha invalida'</h3> 
     </div> 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
+        }
+    </script> 
     <div class="row"> 
      <div class="col-sm-8"> 
       <div class="card h-100"> 
@@ -63,52 +68,105 @@
      <div class="col-sm-4"> 
       <div class="card h-100"> 
        <div class="card-header">
-        Scenario Summary
+        Scenario Information
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>1</strong> Scenario(s)</li> 
-         <li class="list-group-item"><strong>1</strong> passed</li> 
+         <li class="list-group-item"><strong>4</strong> Step(s)</li> 
+         <li class="list-group-item"><strong>4</strong> passed</li> 
          <li class="list-group-item"><strong>0</strong> failed</li> 
          <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 02s 557ms</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 04s 573ms</li> 
+         <li class="list-group-item"> <a href="pages/tag-scenarios/tag_login.html">@login</a>, <a href="pages/tag-scenarios/tag_login-invalido.html">@login-invalido</a> </li> 
         </ul> 
        </div> 
       </div> 
      </div> 
     </div> 
-    <div class="row" id="card_passed"> 
+    <ul class="list-group list-group-flush"> 
      <div class="col-sm-12"> 
-      <div class="card"> 
-       <div class="card-header border-success bg-success text-white">
-        Passed Scenarios
+      <div class="card h-100"> 
+       <div class="card-header">
+        Steps
        </div> 
        <div class="card-body"> 
-        <table id="results_passed" class="table table-hover renderAsDataTable"> 
-         <thead> 
-          <tr> 
-           <th class="text-left">Feature</th> 
-           <th class="text-left">Scenario</th> 
-           <th>Duration</th> 
-          </tr> 
-         </thead> 
-         <tbody> 
-          <tr> 
-           <td class="text-left"><span data-toggle="tooltip" title="Eu como um novo usuário
-Quero realizar o login na minha conta
-Para poder concluir minhas compras | login.feature"><a href="pages/feature-scenarios/feature_0.html">Login do Usuário</a></span> </td> 
-           <td class="text-left"> <a href="pages/scenario-detail/scenario_1.html">Login bem-sucedido com credenciais válidas</a> </td> 
-           <td class="text-right" data-order="2.557.413.900"> 
-            <nobr>
-             0m 02s 557ms
-            </nobr> </td> 
-          </tr> 
-         </tbody> 
-        </table> 
+        <li class="list-group-item"> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 1
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="LoginSteps.que_estou_na_página_de_login()"> Dado que estou na página de login </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 04s 376ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 2
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="LoginSteps.preencho_o_login_e_a_senha(String,String)"> Quando preencho o login "<strong>thiago@teste.com</strong>" e a senha "<strong>365</strong>" </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 134ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 3
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="LoginSteps.clico_no_botão_de_login()"> E clico no botão de login </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 039ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row row_passed"> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            Step 4
+           </nobr> 
+          </div> 
+          <div class="col-6 text-left"> 
+           <span data-toggle="tooltip" title="LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"> Então a aplicacao deve exibir a mensagem "<strong>Senha inválida.</strong>" na tela </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 022ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> </li> 
        </div> 
       </div> 
      </div> 
-    </div> 
+    </ul> 
    </div> 
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
@@ -145,26 +203,95 @@ Para poder concluir minhas compras | login.feature"><a href="pages/feature-scena
             var chart = new Chart(ctx, eval({
   "data": {
     "labels": [
-      "passed",
-      "failed",
-      "skipped"
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
     ],
     "datasets": [
       {
         "data": [
-          1,
+          4376,
+          134,
+          39,
+          22
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)"
+        ],
+        "label": "passed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
           0,
           0
         ],
         "backgroundColor": [
-          "rgba(40, 167, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)"
+        ],
+        "label": "failed",
+        "stack": "complete"
+      },
+      {
+        "data": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
-        ]
+        ],
+        "label": "skipped",
+        "stack": "complete"
       }
     ]
   },
-  "type": "pie"
+  "options": {
+    "scales": {
+      "xAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step(s)"
+          },
+          "stepSize": 0.0
+        }
+      ],
+      "yAxes": [
+        {
+          "ticks": {
+            "min": 0,
+            "display": true
+          },
+          "stacked": true,
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Step Runtime"
+          },
+          "stepSize": 0.0
+        }
+      ]
+    }
+  },
+  "type": "bar"
 }));
 
             var original;

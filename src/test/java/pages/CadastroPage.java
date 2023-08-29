@@ -6,11 +6,14 @@ import org.openqa.selenium.WebElement;
 import runner.RunCucumberTest;
 import support.Utils;
 
+import static support.Commands.clickElement;
+
 public class CadastroPage extends RunCucumberTest {
 
     private By preencher_email = (By.id("email"));
     private By preencher_nome = (By.id("user"));
     private By preencher_senha = (By.id("password"));
+    private By botao_cadastro = (By.id("btnRegister"));
     private String URL = "https://automationpratice.com.br/register";
 
     public void acessarCadastro() {
@@ -21,18 +24,16 @@ public class CadastroPage extends RunCucumberTest {
         getDriver().findElement(preencher_nome).sendKeys("Thiago Lyon");
     }
 
-    public void preencherEmail() {
-        getDriver().findElement(preencher_email).sendKeys(Utils.gerarEmailAleatorio());
+    public void preencherEmail(String email) {
+        getDriver().findElement(preencher_email).sendKeys(email);
     }
 
-    public void preencherSenha() {
-        String senha = Utils.minhaSenha();
-        getDriver().findElement(preencher_senha).sendKeys(Utils.minhaSenha());
-        System.out.println(senha);
+    public void preencherSenha(String senha) {
+        getDriver().findElement(preencher_senha).sendKeys(senha);
     }
 
     public void clicarBtnCadastar() {
-        getDriver().findElement(By.id("btnRegister")).click();
+        clickElement(botao_cadastro);
     }
 
     public void mensagemConfirmacao() {
