@@ -18,8 +18,27 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
   "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 3829213000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 13,
   "name": "Login bem-sucedido com credenciais válidas",
   "description": "",
   "id": "login-do-usuário;login-bem-sucedido-com-credenciais-válidas",
@@ -27,37 +46,25 @@ formatter.scenario({
   "keyword": "Cenário",
   "tags": [
     {
-      "line": 9,
+      "line": 12,
       "name": "@login-sucesso"
     }
   ]
 });
 formatter.step({
-  "line": 11,
-  "name": "que estou na página de login",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "preencho o login \"thiago@teste.com\" e a senha \"Lyon365\"",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "clico no botão de login",
   "keyword": "E "
 });
 formatter.step({
-  "line": 14,
+  "line": 16,
   "name": "devo ser redirecionado para a página da minha conta",
   "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_página_de_login()"
-});
-formatter.result({
-  "duration": 3320802200,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -73,25 +80,44 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 207825900,
+  "duration": 100601800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 84510600,
+  "duration": 249058200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
 });
 formatter.result({
-  "duration": 36753300,
+  "duration": 9429200,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 3949557900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
+  "line": 19,
   "name": "Login mal-sucedido com email inválido",
   "description": "",
   "id": "login-do-usuário;login-mal-sucedido-com-email-inválido",
@@ -99,37 +125,25 @@ formatter.scenario({
   "keyword": "Cenário",
   "tags": [
     {
-      "line": 16,
+      "line": 18,
       "name": "@login-email-invalido"
     }
   ]
 });
 formatter.step({
-  "line": 18,
-  "name": "que estou na página de login",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "preencho o login \"thiago.com\" e a senha \"Lyon365\"",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 20,
+  "line": 21,
   "name": "clico no botão de login",
   "keyword": "E "
 });
 formatter.step({
-  "line": 21,
+  "line": 22,
   "name": "a aplicacao deve exibir a mensagem \"E-mail inválido.\" na tela",
   "keyword": "Então "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_página_de_login()"
-});
-formatter.result({
-  "duration": 2627740400,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -145,14 +159,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 201102300,
+  "duration": 89172700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 62173800,
+  "duration": 238089100,
   "status": "passed"
 });
 formatter.match({
@@ -165,11 +179,30 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 31822000,
+  "duration": 16267300,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 6147786900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
+  "line": 25,
   "name": "Login mal-sucedido com senha inválida",
   "description": "",
   "id": "login-do-usuário;login-mal-sucedido-com-senha-inválida",
@@ -177,15 +210,10 @@ formatter.scenario({
   "keyword": "Cenário",
   "tags": [
     {
-      "line": 23,
+      "line": 24,
       "name": "@login-senha-invalida"
     }
   ]
-});
-formatter.step({
-  "line": 25,
-  "name": "que estou na página de login",
-  "keyword": "Dado "
 });
 formatter.step({
   "line": 26,
@@ -203,13 +231,6 @@ formatter.step({
   "keyword": "Então "
 });
 formatter.match({
-  "location": "LoginSteps.que_estou_na_página_de_login()"
-});
-formatter.result({
-  "duration": 2597772300,
-  "status": "passed"
-});
-formatter.match({
   "arguments": [
     {
       "val": "thiago@teste.com",
@@ -223,14 +244,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 209794200,
+  "duration": 83863200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 53592500,
+  "duration": 226880900,
   "status": "passed"
 });
 formatter.match({
@@ -243,7 +264,7 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 30279200,
+  "duration": 14383900,
   "status": "passed"
 });
 });
