@@ -1,196 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("cadastro.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#language: pt"
-    }
-  ],
-  "line": 4,
-  "name": "Cadastro de Usuário",
-  "description": "Eu como um novo usuário\r\nQuero me cadastrar no site\r\nPara que eu possa fazer login posteriormente",
-  "id": "cadastro-de-usuário",
-  "keyword": "Funcionalidade",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@cadastro-completo"
-    }
-  ]
-});
-formatter.scenario({
-  "line": 10,
-  "name": "Cadastro bem-sucedido com informações válidas",
-  "description": "",
-  "id": "cadastro-de-usuário;cadastro-bem-sucedido-com-informações-válidas",
-  "type": "scenario",
-  "keyword": "Cenário",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@cadastro-sucesso"
-    }
-  ]
-});
-formatter.step({
-  "line": 11,
-  "name": "que estou na página de cadastro",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 12,
-  "name": "preencho o formulário de cadastro com informações válidas",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 13,
-  "name": "clico no botão de cadastro",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 14,
-  "name": "devo receber uma mensagem de confirmação",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
-});
-formatter.result({
-  "duration": 4272682800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
-});
-formatter.result({
-  "duration": 315424800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CadastroSteps.clico_no_botão_de_cadastro()"
-});
-formatter.result({
-  "duration": 84205400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
-});
-formatter.result({
-  "duration": 59801300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2015400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 80400,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1130200,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Atualizar os dados da minha conta",
-  "description": "",
-  "id": "cadastro-de-usuário;atualizar-os-dados-da-minha-conta",
-  "type": "scenario",
-  "keyword": "Cenário",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@atualiza-perfil"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "que estou na pagina do painel",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 19,
-  "name": "acesso o menu ACCOUNT DETAILS",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 20,
-  "name": "acesso o menu UPDATE ACCOUNT",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 21,
-  "name": "preencho os dados corretamente",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 22,
-  "name": "clico no botão UPDATE INFORMATION",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 23,
-  "name": "a aplicacao deve ser redirecionada para a tela PROFILE",
-  "keyword": "Entao "
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
-});
-formatter.result({
-  "duration": 3306311300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
-});
-formatter.result({
-  "duration": 69188900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
-});
-formatter.result({
-  "duration": 80058300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
-});
-formatter.result({
-  "duration": 763114300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
-});
-formatter.result({
-  "duration": 1104117100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
-});
-formatter.result({
-  "duration": 303641000,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 72600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 57600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 40300,
-  "status": "passed"
-});
-formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
 formatter.feature({
   "comments": [
     {
@@ -226,7 +34,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 3624461100,
+  "duration": 3838106400,
   "status": "passed"
 });
 formatter.scenario({
@@ -272,33 +80,33 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 201911200,
+  "duration": 201220900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 81801800,
+  "duration": 80978800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
 });
 formatter.result({
-  "duration": 57162000,
+  "duration": 57509600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91700,
+  "duration": 1056900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 76300,
+  "duration": 575800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 66200,
+  "duration": 451300,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -382,7 +190,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 4434338600,
+  "duration": 3556936600,
   "status": "passed"
 });
 formatter.scenario({
@@ -439,14 +247,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 168943900,
+  "duration": 169145900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 73780700,
+  "duration": 83305400,
   "status": "passed"
 });
 formatter.match({
@@ -459,19 +267,19 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 46866000,
+  "duration": 52594900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 50000,
+  "duration": 49000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112900,
+  "duration": 38900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 77500,
+  "duration": 41100,
   "status": "passed"
 });
 formatter.background({
@@ -490,7 +298,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 2625743500,
+  "duration": 3526287900,
   "status": "passed"
 });
 formatter.scenario({
@@ -547,14 +355,14 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 185245400,
+  "duration": 181620200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 74253100,
+  "duration": 75570900,
   "status": "passed"
 });
 formatter.match({
@@ -567,19 +375,19 @@ formatter.match({
   "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
 });
 formatter.result({
-  "duration": 54203800,
+  "duration": 48374300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 46600,
+  "duration": 41400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 55000,
+  "duration": 40700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 39600,
+  "duration": 42600,
   "status": "passed"
 });
 });
