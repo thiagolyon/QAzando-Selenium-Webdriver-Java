@@ -23,7 +23,6 @@ jobs:
         uses: browser-actions/setup-chrome@latest
 
       - name: Instalar o Chrome Driver
-        steps:
           - uses: actions/checkout@v2
           - uses: nanasess/setup-chromedriver@v2
           - run: |
