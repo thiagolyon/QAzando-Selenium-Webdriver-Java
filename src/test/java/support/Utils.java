@@ -1,5 +1,6 @@
 package support;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,8 +62,12 @@ public class Utils extends RunCucumberTest {
         return new String(arraySenha);
     }
 
-    public static void scrollToElement(WebDriver driver, WebElement element) {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+    public static void scrollToElement(By locator) {
+        WebDriver driver = getDriver(System.getProperty("browser"));
+        WebElement element = driver.findElement(locator);
+
+        // Executa um scroll suave até o elemento
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});", element);
     }
 
     public static void scrollAteOFinalDaPagina() throws InterruptedException {
