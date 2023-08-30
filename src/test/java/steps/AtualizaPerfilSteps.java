@@ -1,11 +1,13 @@
 package steps;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import pages.AtualizaPerfilPage;
-import runner.RunBase;
 import runner.RunCucumberTest;
+import support.ScreenshotUtils;
 
 
 public class AtualizaPerfilSteps extends RunCucumberTest {
@@ -45,5 +47,10 @@ public class AtualizaPerfilSteps extends RunCucumberTest {
     @Entao("^a aplicacao deve ser redirecionada para a tela PROFILE$")
     public void a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE() {
         atualizaPerfilPage.validarTelaProfile();
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+        ScreenshotUtils.addScreenshotOnScenario(scenario);
     }
 }

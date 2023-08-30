@@ -1,10 +1,13 @@
 package steps;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.LoginPage;
 import runner.RunCucumberTest;
+import support.ScreenshotUtils;
 
 public class LoginSteps extends RunCucumberTest {
 
@@ -34,5 +37,10 @@ public class LoginSteps extends RunCucumberTest {
     @Então("^a aplicacao deve exibir a mensagem \"([^\"]*)\" na tela$")
     public void a_aplicacao_deve_exibir_a_mensagem_na_tela(String mensagem) {
         loginPage.mensagemErro(mensagem);
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+            ScreenshotUtils.addScreenshotOnScenario(scenario);
     }
 }

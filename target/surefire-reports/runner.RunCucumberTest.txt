@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.51 s - in runner.RunCucumberTest
+Tests run: 27, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 27.054 s <<< FAILURE! - in runner.RunCucumberTest
+| thiago.com | Lyon365 | E-mail inválido |.Então a aplicacao deve exibir a mensagem "E-mail inválido" na tela  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: Mensagem esperada não corresponde com a mensagem atual. expected:<E-mail inválido[]> but was:<E-mail inválido[.]>
+
+| thiago.com | Lyon365 | E-mail inválido |  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: Mensagem esperada não corresponde com a mensagem atual. expected:<E-mail inválido[]> but was:<E-mail inválido[.]>
+
+| thiago@teste.com | 365 | Senha inválida |.Então a aplicacao deve exibir a mensagem "Senha inválida" na tela  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: Mensagem esperada não corresponde com a mensagem atual. expected:<Senha inválida[]> but was:<Senha inválida[.]>
+
+| thiago@teste.com | 365 | Senha inválida |  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: Mensagem esperada não corresponde com a mensagem atual. expected:<Senha inválida[]> but was:<Senha inválida[.]>
+

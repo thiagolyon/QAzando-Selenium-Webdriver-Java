@@ -5,5 +5,7 @@ C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\Trein
 C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\runner\RunBase.java
 C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\pages\LoginPage.java
 C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\steps\AtualizaPerfilSteps.java
+C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\support\Commands.java
+C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\support\ScreenshotUtils.java
 C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\pages\CadastroPage.java
 C:\Users\thiag\OneDrive\Documentos\Lyon\00. Cursos\99. Treinando automação\TreinandoAutomacao\src\test\java\runner\RunCucumberTest.java

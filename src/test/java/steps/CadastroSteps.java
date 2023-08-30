@@ -1,9 +1,12 @@
 package steps;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.CadastroPage;
+import support.ScreenshotUtils;
 import support.Utils;
 
 public class CadastroSteps extends Utils {
@@ -30,5 +33,10 @@ public class CadastroSteps extends Utils {
     @Então("^devo receber uma mensagem de confirmação$")
     public void devo_receber_uma_mensagem_de_confirmação() {
         cadastroPage.mensagemConfirmacao();
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+        ScreenshotUtils.addScreenshotOnScenario(scenario);
     }
 }
