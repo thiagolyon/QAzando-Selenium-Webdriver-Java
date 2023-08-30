@@ -56,23 +56,530 @@ formatter.match({
   "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
 });
 formatter.result({
-  "duration": 2285008100,
+  "duration": 4272682800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
 });
 formatter.result({
-  "duration": 588278600,
+  "duration": 315424800,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.clico_no_botão_de_cadastro()"
 });
 formatter.result({
-  "duration": 14502260700,
+  "duration": 84205400,
   "status": "passed"
 });
 formatter.match({
   "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
+});
+formatter.result({
+  "duration": 59801300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2015400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 80400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1130200,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Atualizar os dados da minha conta",
+  "description": "",
+  "id": "cadastro-de-usuário;atualizar-os-dados-da-minha-conta",
+  "type": "scenario",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "line": 16,
+      "name": "@atualiza-perfil"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "que estou na pagina do painel",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 19,
+  "name": "acesso o menu ACCOUNT DETAILS",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 20,
+  "name": "acesso o menu UPDATE ACCOUNT",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 21,
+  "name": "preencho os dados corretamente",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 22,
+  "name": "clico no botão UPDATE INFORMATION",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 23,
+  "name": "a aplicacao deve ser redirecionada para a tela PROFILE",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
+});
+formatter.result({
+  "duration": 3306311300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
+});
+formatter.result({
+  "duration": 69188900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
+});
+formatter.result({
+  "duration": 80058300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
+});
+formatter.result({
+  "duration": 763114300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
+});
+formatter.result({
+  "duration": 1104117100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
+});
+formatter.result({
+  "duration": 303641000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 72600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 57600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 40300,
+  "status": "passed"
+});
+formatter.uri("login.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "# language: pt"
+    }
+  ],
+  "line": 4,
+  "name": "Login do Usuário",
+  "description": "Eu como um novo usuário\r\nQuero realizar o login na minha conta\r\nPara poder concluir minhas compras",
+  "id": "login-do-usuário",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@login"
+    }
+  ]
+});
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 3624461100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "Login bem-sucedido com credenciais válidas",
+  "description": "",
+  "id": "login-do-usuário;login-bem-sucedido-com-credenciais-válidas",
+  "type": "scenario",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "line": 12,
+      "name": "@login-sucesso"
+    }
+  ]
+});
+formatter.step({
+  "line": 14,
+  "name": "preencho o login \"thiago@teste.com\" e a senha \"Lyon365\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 15,
+  "name": "clico no botão de login",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 16,
+  "name": "devo ser redirecionado para a página da minha conta",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "thiago@teste.com",
+      "offset": 18
+    },
+    {
+      "val": "Lyon365",
+      "offset": 47
+    }
+  ],
+  "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+});
+formatter.result({
+  "duration": 201911200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.clico_no_botão_de_login()"
+});
+formatter.result({
+  "duration": 81801800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
+});
+formatter.result({
+  "duration": 57162000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 91700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 76300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 66200,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 19,
+  "name": "Validar mensagem de login invalido",
+  "description": "",
+  "id": "login-do-usuário;validar-mensagem-de-login-invalido",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 18,
+      "name": "@login-invalido"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "preencho o login \"\u003cuser\u003e\" e a senha \"\u003cpassword\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 21,
+  "name": "clico no botão de login",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 22,
+  "name": "a aplicacao deve exibir a mensagem \"\u003cmessage\u003e\" na tela",
+  "keyword": "Então "
+});
+formatter.examples({
+  "line": 24,
+  "name": "",
+  "description": "",
+  "id": "login-do-usuário;validar-mensagem-de-login-invalido;",
+  "rows": [
+    {
+      "cells": [
+        "user",
+        "password",
+        "message"
+      ],
+      "line": 25,
+      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;1"
+    },
+    {
+      "cells": [
+        "thiago.com",
+        "Lyon365",
+        "E-mail inválido."
+      ],
+      "line": 26,
+      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2"
+    },
+    {
+      "cells": [
+        "thiago@teste.com",
+        "365",
+        "Senha inválida."
+      ],
+      "line": 27,
+      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3"
+    }
+  ],
+  "keyword": "Exemplos"
+});
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 4434338600,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 26,
+  "name": "Validar mensagem de login invalido",
+  "description": "",
+  "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2",
+  "type": "scenario",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@login"
+    },
+    {
+      "line": 18,
+      "name": "@login-invalido"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "preencho o login \"thiago.com\" e a senha \"Lyon365\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 21,
+  "name": "clico no botão de login",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 22,
+  "name": "a aplicacao deve exibir a mensagem \"E-mail inválido.\" na tela",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "thiago.com",
+      "offset": 18
+    },
+    {
+      "val": "Lyon365",
+      "offset": 41
+    }
+  ],
+  "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+});
+formatter.result({
+  "duration": 168943900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.clico_no_botão_de_login()"
+});
+formatter.result({
+  "duration": 73780700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "E-mail inválido.",
+      "offset": 36
+    }
+  ],
+  "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
+});
+formatter.result({
+  "duration": 46866000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 50000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 112900,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 77500,
+  "status": "passed"
+});
+formatter.background({
+  "line": 9,
+  "name": "Acessar tela de login",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 10,
+  "name": "que estou na página de login",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "LoginSteps.que_estou_na_página_de_login()"
+});
+formatter.result({
+  "duration": 2625743500,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 27,
+  "name": "Validar mensagem de login invalido",
+  "description": "",
+  "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3",
+  "type": "scenario",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@login"
+    },
+    {
+      "line": 18,
+      "name": "@login-invalido"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "preencho o login \"thiago@teste.com\" e a senha \"365\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Quando "
+});
+formatter.step({
+  "line": 21,
+  "name": "clico no botão de login",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 22,
+  "name": "a aplicacao deve exibir a mensagem \"Senha inválida.\" na tela",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "thiago@teste.com",
+      "offset": 18
+    },
+    {
+      "val": "365",
+      "offset": 47
+    }
+  ],
+  "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+});
+formatter.result({
+  "duration": 185245400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.clico_no_botão_de_login()"
+});
+formatter.result({
+  "duration": 74253100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Senha inválida.",
+      "offset": 36
+    }
+  ],
+  "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
+});
+formatter.result({
+  "duration": 54203800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 46600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 55000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 39600,
+  "status": "passed"
+});
 });

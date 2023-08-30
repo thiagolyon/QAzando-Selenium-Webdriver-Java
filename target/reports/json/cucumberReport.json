@@ -1,0 +1,626 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Cadastro bem-sucedido com informações válidas",
+        "description": "",
+        "id": "cadastro-de-usuário;cadastro-bem-sucedido-com-informações-válidas",
+        "after": [
+          {
+            "result": {
+              "duration": 2015400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 80400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1130200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 4272682800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na página de cadastro",
+            "match": {
+              "location": "CadastroSteps.que_estou_na_página_de_cadastro()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 315424800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho o formulário de cadastro com informações válidas",
+            "match": {
+              "location": "CadastroSteps.preencho_o_formulário_de_cadastro_com_informações_válidas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 84205400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botão de cadastro",
+            "match": {
+              "location": "CadastroSteps.clico_no_botão_de_cadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 59801300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "devo receber uma mensagem de confirmação",
+            "match": {
+              "location": "CadastroSteps.devo_receber_uma_mensagem_de_confirmação()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@cadastro-sucesso"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Atualizar os dados da minha conta",
+        "description": "",
+        "id": "cadastro-de-usuário;atualizar-os-dados-da-minha-conta",
+        "after": [
+          {
+            "result": {
+              "duration": 72600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 57600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 40300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 3306311300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou na pagina do painel",
+            "match": {
+              "location": "AtualizaPerfilSteps.que_estou_na_pagina_do_painel()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 69188900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "acesso o menu ACCOUNT DETAILS",
+            "match": {
+              "location": "AtualizaPerfilSteps.acesso_o_menu_ACCOUNT_DETAILS()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 80058300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "acesso o menu UPDATE ACCOUNT",
+            "match": {
+              "location": "AtualizaPerfilSteps.acesso_o_menu_UPDATE_ACCOUNT()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 763114300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "preencho os dados corretamente",
+            "match": {
+              "location": "AtualizaPerfilSteps.preencho_os_dados_corretamente()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1104117100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico no botão UPDATE INFORMATION",
+            "match": {
+              "location": "AtualizaPerfilSteps.clico_no_botão_UPDATE_INFORMATION()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 303641000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "a aplicacao deve ser redirecionada para a tela PROFILE",
+            "match": {
+              "location": "AtualizaPerfilSteps.a_aplicacao_deve_ser_redirecionada_para_a_tela_PROFILE()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@atualiza-perfil"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro de Usuário",
+    "description": "Eu como um novo usuário\r\nQuero me cadastrar no site\r\nPara que eu possa fazer login posteriormente",
+    "id": "cadastro-de-usuário",
+    "keyword": "Funcionalidade",
+    "uri": "cadastro.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@cadastro-completo"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Acessar tela de login",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3624461100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Login bem-sucedido com credenciais válidas",
+        "description": "",
+        "id": "login-do-usuário;login-bem-sucedido-com-credenciais-válidas",
+        "after": [
+          {
+            "result": {
+              "duration": 91700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 76300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 66200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 201911200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "preencho o login \"thiago@teste.com\" e a senha \"Lyon365\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thiago@teste.com",
+                  "offset": 18
+                },
+                {
+                  "val": "Lyon365",
+                  "offset": 47
+                }
+              ],
+              "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 81801800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "clico no botão de login",
+            "match": {
+              "location": "LoginSteps.clico_no_botão_de_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 57162000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "devo ser redirecionado para a página da minha conta",
+            "match": {
+              "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@login-sucesso"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar tela de login",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4434338600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Validar mensagem de login invalido",
+        "description": "",
+        "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 112900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 77500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 168943900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "preencho o login \"thiago.com\" e a senha \"Lyon365\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thiago.com",
+                  "offset": 18
+                },
+                {
+                  "val": "Lyon365",
+                  "offset": 41
+                }
+              ],
+              "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 73780700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clico no botão de login",
+            "match": {
+              "location": "LoginSteps.clico_no_botão_de_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 46866000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "a aplicacao deve exibir a mensagem \"E-mail inválido.\" na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "E-mail inválido.",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 18,
+            "name": "@login-invalido"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar tela de login",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 2625743500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou na página de login",
+            "match": {
+              "location": "LoginSteps.que_estou_na_página_de_login()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Validar mensagem de login invalido",
+        "description": "",
+        "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 46600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 55000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroSteps.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 39600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 185245400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "preencho o login \"thiago@teste.com\" e a senha \"365\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "thiago@teste.com",
+                  "offset": 18
+                },
+                {
+                  "val": "365",
+                  "offset": 47
+                }
+              ],
+              "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 74253100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clico no botão de login",
+            "match": {
+              "location": "LoginSteps.clico_no_botão_de_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 54203800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "a aplicacao deve exibir a mensagem \"Senha inválida.\" na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Senha inválida.",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@login"
+          },
+          {
+            "line": 18,
+            "name": "@login-invalido"
+          }
+        ]
+      }
+    ],
+    "name": "Login do Usuário",
+    "description": "Eu como um novo usuário\r\nQuero realizar o login na minha conta\r\nPara poder concluir minhas compras",
+    "id": "login-do-usuário",
+    "keyword": "Funcionalidade",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@login"
+      }
+    ]
+  }
+]
