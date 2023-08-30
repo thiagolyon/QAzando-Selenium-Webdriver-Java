@@ -1,0 +1,11 @@
+name: Smoke Tests - PR
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  RunTest:
+    runs-on: ubuntu-latest
+
+    steps: 
