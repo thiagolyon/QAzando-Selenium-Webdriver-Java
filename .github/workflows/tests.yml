@@ -39,7 +39,6 @@ jobs:
           name: report-tests
           path: '**/formated-report/'
 
-
       - name: Enviar notificação Slack - Sucesso
         if: ${{ success() }}
         uses: rtCamp/action-slack-notify@v2
