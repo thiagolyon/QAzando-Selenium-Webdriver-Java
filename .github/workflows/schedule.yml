@@ -2,7 +2,8 @@ name: Schedule Tests
 
 on:
   schedule:
-    - cron: '30 11 * * *'
+#    sintaxe do cron -> https://crontab.guru/#30_20_*_*_1-5
+    - cron: '0/5 * * * 1-5'
 
 jobs:
   RunTest:
