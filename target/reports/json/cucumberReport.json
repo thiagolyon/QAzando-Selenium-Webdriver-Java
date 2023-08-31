@@ -17,7 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2313677100,
+              "duration": 6582404500,
               "status": "passed"
             },
             "line": 10,
@@ -37,7 +37,7 @@
         "after": [
           {
             "result": {
-              "duration": 1675800,
+              "duration": 1419000,
               "status": "passed"
             },
             "match": {
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 408800,
+              "duration": 510900,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 41600,
+              "duration": 44700,
               "status": "passed"
             },
             "match": {
@@ -68,7 +68,7 @@
         "steps": [
           {
             "result": {
-              "duration": 171325400,
+              "duration": 188866800,
               "status": "passed"
             },
             "line": 14,
@@ -90,7 +90,7 @@
           },
           {
             "result": {
-              "duration": 114054900,
+              "duration": 82586800,
               "status": "passed"
             },
             "line": 15,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 59276100,
+              "duration": 43735800,
               "status": "passed"
             },
             "line": 16,
@@ -117,264 +117,6 @@
           {
             "line": 12,
             "name": "@login-sucesso"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar tela de login",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 2567523100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 26,
-        "name": "Validar mensagem de login invalido",
-        "description": "",
-        "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 61500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 43800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CadastroSteps.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 70500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.afterScenario(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 176839500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho o login \"thiago.com\" e a senha \"Lyon365\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thiago.com",
-                  "offset": 18
-                },
-                {
-                  "val": "Lyon365",
-                  "offset": 41
-                }
-              ],
-              "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 104585600,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botão de login",
-            "match": {
-              "location": "LoginSteps.clico_no_botão_de_login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 50691900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "a aplicacao deve exibir a mensagem \"E-mail inválido.\" na tela",
-            "match": {
-              "arguments": [
-                {
-                  "val": "E-mail inválido.",
-                  "offset": 36
-                }
-              ],
-              "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@login"
-          },
-          {
-            "line": 18,
-            "name": "@login-invalido"
-          }
-        ]
-      },
-      {
-        "line": 9,
-        "name": "Acessar tela de login",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 2534910900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "que estou na página de login",
-            "match": {
-              "location": "LoginSteps.que_estou_na_página_de_login()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 27,
-        "name": "Validar mensagem de login invalido",
-        "description": "",
-        "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 72100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "AtualizaPerfilSteps.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 46700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CadastroSteps.afterScenario(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 31000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginSteps.afterScenario(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 180287100,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "preencho o login \"thiago@teste.com\" e a senha \"365\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "thiago@teste.com",
-                  "offset": 18
-                },
-                {
-                  "val": "365",
-                  "offset": 47
-                }
-              ],
-              "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 106549100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botão de login",
-            "match": {
-              "location": "LoginSteps.clico_no_botão_de_login()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 48034600,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "a aplicacao deve exibir a mensagem \"Senha inválida.\" na tela",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Senha inválida.",
-                  "offset": 36
-                }
-              ],
-              "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Então "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@login"
-          },
-          {
-            "line": 18,
-            "name": "@login-invalido"
           }
         ]
       }

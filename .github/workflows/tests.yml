@@ -26,7 +26,7 @@ jobs:
         uses: nanasess/setup-chromedriver@v2
 
       - name: Run Test
-        run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci -Dcucumber.options="--tags @login"
+        run: mvn test -Dtest=RunCucumberTest -Dbrowser=chrome-ci -Dcucumber.options="--tags @login"
 
       - name: Gerar relatório
         if: always()
