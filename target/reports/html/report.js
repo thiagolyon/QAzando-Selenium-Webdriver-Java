@@ -34,7 +34,7 @@ formatter.match({
   "location": "LoginSteps.que_estou_na_página_de_login()"
 });
 formatter.result({
-  "duration": 2313677100,
+  "duration": 6582404500,
   "status": "passed"
 });
 formatter.scenario({
@@ -80,314 +80,33 @@ formatter.match({
   "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
 });
 formatter.result({
-  "duration": 171325400,
+  "duration": 188866800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clico_no_botão_de_login()"
 });
 formatter.result({
-  "duration": 114054900,
+  "duration": 82586800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.devo_ser_redirecionado_para_a_página_da_minha_conta()"
 });
 formatter.result({
-  "duration": 59276100,
+  "duration": 43735800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1675800,
+  "duration": 1419000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 408800,
+  "duration": 510900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 41600,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 19,
-  "name": "Validar mensagem de login invalido",
-  "description": "",
-  "id": "login-do-usuário;validar-mensagem-de-login-invalido",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 18,
-      "name": "@login-invalido"
-    }
-  ]
-});
-formatter.step({
-  "line": 20,
-  "name": "preencho o login \"\u003cuser\u003e\" e a senha \"\u003cpassword\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 21,
-  "name": "clico no botão de login",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 22,
-  "name": "a aplicacao deve exibir a mensagem \"\u003cmessage\u003e\" na tela",
-  "keyword": "Então "
-});
-formatter.examples({
-  "line": 24,
-  "name": "",
-  "description": "",
-  "id": "login-do-usuário;validar-mensagem-de-login-invalido;",
-  "rows": [
-    {
-      "cells": [
-        "user",
-        "password",
-        "message"
-      ],
-      "line": 25,
-      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;1"
-    },
-    {
-      "cells": [
-        "thiago.com",
-        "Lyon365",
-        "E-mail inválido."
-      ],
-      "line": 26,
-      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2"
-    },
-    {
-      "cells": [
-        "thiago@teste.com",
-        "365",
-        "Senha inválida."
-      ],
-      "line": 27,
-      "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3"
-    }
-  ],
-  "keyword": "Exemplos"
-});
-formatter.background({
-  "line": 9,
-  "name": "Acessar tela de login",
-  "description": "",
-  "type": "background",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "line": 10,
-  "name": "que estou na página de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_página_de_login()"
-});
-formatter.result({
-  "duration": 2567523100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "Validar mensagem de login invalido",
-  "description": "",
-  "id": "login-do-usuário;validar-mensagem-de-login-invalido;;2",
-  "type": "scenario",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@login"
-    },
-    {
-      "line": 18,
-      "name": "@login-invalido"
-    }
-  ]
-});
-formatter.step({
-  "line": 20,
-  "name": "preencho o login \"thiago.com\" e a senha \"Lyon365\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 21,
-  "name": "clico no botão de login",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 22,
-  "name": "a aplicacao deve exibir a mensagem \"E-mail inválido.\" na tela",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "thiago.com",
-      "offset": 18
-    },
-    {
-      "val": "Lyon365",
-      "offset": 41
-    }
-  ],
-  "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
-});
-formatter.result({
-  "duration": 176839500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.clico_no_botão_de_login()"
-});
-formatter.result({
-  "duration": 104585600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "E-mail inválido.",
-      "offset": 36
-    }
-  ],
-  "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
-});
-formatter.result({
-  "duration": 50691900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 61500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 43800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 70500,
-  "status": "passed"
-});
-formatter.background({
-  "line": 9,
-  "name": "Acessar tela de login",
-  "description": "",
-  "type": "background",
-  "keyword": "Contexto"
-});
-formatter.step({
-  "line": 10,
-  "name": "que estou na página de login",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "LoginSteps.que_estou_na_página_de_login()"
-});
-formatter.result({
-  "duration": 2534910900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 27,
-  "name": "Validar mensagem de login invalido",
-  "description": "",
-  "id": "login-do-usuário;validar-mensagem-de-login-invalido;;3",
-  "type": "scenario",
-  "keyword": "Esquema do Cenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@login"
-    },
-    {
-      "line": 18,
-      "name": "@login-invalido"
-    }
-  ]
-});
-formatter.step({
-  "line": 20,
-  "name": "preencho o login \"thiago@teste.com\" e a senha \"365\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 21,
-  "name": "clico no botão de login",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 22,
-  "name": "a aplicacao deve exibir a mensagem \"Senha inválida.\" na tela",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Então "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "thiago@teste.com",
-      "offset": 18
-    },
-    {
-      "val": "365",
-      "offset": 47
-    }
-  ],
-  "location": "LoginSteps.preencho_o_login_e_a_senha(String,String)"
-});
-formatter.result({
-  "duration": 180287100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.clico_no_botão_de_login()"
-});
-formatter.result({
-  "duration": 106549100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Senha inválida.",
-      "offset": 36
-    }
-  ],
-  "location": "LoginSteps.a_aplicacao_deve_exibir_a_mensagem_na_tela(String)"
-});
-formatter.result({
-  "duration": 48034600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 72100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 46700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 31000,
+  "duration": 44700,
   "status": "passed"
 });
 });
